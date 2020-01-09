@@ -1,0 +1,949 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #fafafa;
+}
+
+/* 公共类开始 */
+.w {
+  width: 1226px;
+  height: auto;
+  margin: 0 auto;
+  position: relative;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.space {
+  color: #423d39;
+}
+
+.mibgcolor {
+  background-color: #ff6700
+}
+
+a {
+  text-decoration: none;
+  color: #b0b0b0;
+}
+
+a:hover {
+  color: #ff6700;
+}
+
+li {
+  list-style: none;
+}
+
+/* 公共类结束 */
+/* 导航条开始 */
+nav {
+  width: 100%;
+  height: 40px;
+  background-color: #333;
+}
+
+nav li {
+  float: left;
+  margin-right: 8px;
+  font-size: 12px;
+  color: #6e8f9f;
+  line-height: 40px;
+}
+
+.shopCat {
+  display: inline-block;
+  height: 100%;
+  width: 120px;
+  background-color: #424242;
+  color: #6e8f9f;
+  text-align: center;
+  margin-left: 17px;
+}
+
+/* 导航条结束 */
+/* 头部开始 */
+header {
+  height: 100px;
+  background-color: #fff;
+}
+
+h1 {
+  width: 55px;
+  height: 55px;
+  /* background: url(../img/mi-logo.png) no-repeat 50% 50%; */
+  position: absolute;
+  top: 22px;
+  overflow: hidden;
+}
+
+.logoBox {
+  width: 110px;
+  position: absolute;
+  left: -55px;
+  transition: .2s;
+}
+
+.logo .logoBox img {
+  width: 55px;
+  height: 55px;
+  float: left;
+}
+
+.logo:hover .logoBox {
+  left: 0;
+}
+
+header ul {
+  position: absolute;
+  left: 245px;
+}
+
+header ul li {
+  font-size: 17px;
+  float: left;
+  margin-right: 20px;
+  line-height: 100px;
+}
+
+header ul li a {
+  color: #000;
+}
+
+header ul li a:hover {
+  color: #ff6700;
+}
+
+.search {
+  position: absolute;
+  top: 25px;
+  right: 0;
+  width: 295px;
+  height: 50px;
+}
+
+.search input {
+  float: left;
+  outline: none;
+}
+
+.search .search-text {
+  box-sizing: border-box;
+  border: 1px solid #e0e0e0;
+  padding-left: 10px;
+  width: 240px;
+  height: 50px;
+}
+
+.search .search-text:hover {
+  border-color: #000000;
+  transition: 0.7s;
+}
+
+.search .search-text:hover+.search-btn {
+  border-color: #000000;
+  transition: 0.7s;
+}
+
+.search .search-text:focus {
+  border-color: #ff6700;
+  transition: 0.7s;
+}
+
+.search .search-text:focus+.search-btn {
+  border-color: #ff6700;
+  transition: 0.7s;
+}
+
+.search .search-btn {
+  box-sizing: border-box;
+  width: 50px;
+  height: 50px;
+  border: 1px solid #e0e0e0;
+  border-left: none;
+  background-color: #fff;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.search .search-btn:hover {
+  background-color: #ff6700;
+  border-color: #ff6700;
+  color: #FFFFFF;
+}
+
+/* 头部结束 */
+/* 商品分类开始 */
+.site-category {
+  background-color: #FFFFFF;
+}
+
+.site-category .categoryList {
+  width: 235px;
+  height: 440px;
+  background-color: rgba(0, 0, 0, .3);
+  padding-top: 20px;
+  z-index: 10;
+  position: absolute;
+}
+
+.site-category .categoryList li a {
+  display: block;
+  height: 42px;
+  color: #FFFFFF;
+  line-height: 42px;
+  padding-left: 30px;
+  font-size: 14px;
+}
+
+.site-category .categoryList li a i {
+  float: right;
+  padding-right: 20px;
+  line-height: 42px;
+}
+
+.site-category .categoryList li a:hover {
+  background-color: #ff6700;
+  color: #FFFFFF;
+}
+
+.site-category .categoryImgList {
+  width: 100%;
+  height: 460px;
+}
+
+.site-category .categoryImgList img {
+  display: block;
+  width: 100%;
+  height: 460px;
+  position: absolute;
+}
+
+.site-category .categoryImgList span {
+  display: block;
+  width: 40px;
+  height: 70px;
+  line-height: 70px;
+  text-align: center;
+  color: #FFFFFF;
+  font-size: 50px;
+  cursor: pointer;
+  position: absolute;
+  z-index: 999;
+}
+
+.site-category .categoryImgList span:hover {
+  background-color: rgba(0, 0, 0, .3);
+}
+
+.site-category .categoryImgList .pre {
+  top: 190px;
+  left: 235px;
+  border-radius: 0 3px 3px 0;
+}
+
+.site-category .categoryImgList .next {
+  top: 190px;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* 商品分类结束 */
+/* home-hero-sub开始 */
+.home-hero-sub {
+  padding-top: 14px;
+  padding-bottom: 26px;
+  height: 170px;
+  background-color: #fff;
+}
+
+.home-hero-sub .w .span4 {
+  width: 235px;
+  height: 170px;
+  background-color: #5f5750;
+}
+
+.home-hero-sub .w .span4 .home-channel-list {
+  box-sizing: border-box;
+  padding: 2px auto 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+}
+
+.home-hero-sub .w .span4 .home-channel-list li {
+  width: 75px;
+  height: 80px;
+  border: 1px solid #665e57;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-hero-sub .w .span4 .home-channel-list li a {
+  display: block;
+  color: #cfcdcb;
+}
+
+.home-hero-sub .w .span4 .home-channel-list li a:hover {
+  color: #fff;
+}
+
+.home-hero-sub .w .span4 .home-channel-list li a img {
+  display: block;
+  height: 22px;
+  margin: 0 auto;
+}
+
+.home-hero-sub .w .span4 .home-channel-list li a span {
+  font-size: 11px;
+}
+
+.home-hero-sub .w .span16 ul li {
+  width: 316px;
+  height: 170px;
+  float: left;
+  margin-left: 14px;
+}
+
+.home-hero-sub .w .span16 ul li a img {
+  width: 100%;
+  height: 100%;
+}
+
+/* home-hero-sub结束 */
+/* 小米闪购开始 */
+.home-flashsale {
+  height: 400px;
+}
+
+.home-flashsale .header {
+  width: 100%;
+	height: 60px;
+}
+
+.home-flashsale .header .title{
+	margin-top: 22px;
+	font-size: 20px;
+	font-weight: 500;
+}
+.home-flashsale .header .arrow{
+	margin-top: 28px;
+}
+.home-flashsale .header .arrow span{
+	display: inline-block;
+	float: left;
+	width: 34px;
+	height: 22px;
+	color: #b0b0b0;
+	outline: none;
+	font-size: 22px;
+	font-weight: 700;
+	border: 1px solid #e0e0e0;
+	text-align: center;
+	line-height: 22px;
+	cursor: pointer;
+	transition: color .5s;
+}
+.home-flashsale .header .arrow span:last-child{
+	border-left: none;
+}
+.home-flashsale .header .arrow span:hover{
+	color: #ff6700;
+}
+
+.home-flashsale .box .flashsale-countdown{
+	width: 235px;
+	height: 340px;
+	background-color: #f1eded;
+	border-top: 1px solid #e53935;
+}
+.home-flashsale .box .flashsale-countdown  p{
+	color: red;
+	font-size: 20px;
+	text-align: center;
+	margin-top: 60px;
+}
+.home-flashsale .box .flashsale-countdown img {
+	display: block;
+	margin: 32px auto;
+}
+.home-flashsale .box .flashsale-countdown .msg{
+	display: block;
+	font-size: 14px;
+	color: gray;
+	text-align: center;
+}
+.home-flashsale .box .flashsale-countdown .countdown{
+	width: 158px;
+	height: 46px;
+	margin: 33px auto 0;
+}
+.home-flashsale .box .flashsale-countdown .countdown span{
+	line-height: 46px;
+}
+.home-flashsale .box .flashsale-countdown .countdown li {
+	float: left;
+}
+.home-flashsale .box .flashsale-countdown .countdown li:nth-child(2),.home-flashsale .box .flashsale-countdown .countdown li:nth-child(4){
+	width: 10px;
+	text-align: center;
+}
+.home-flashsale .box .flashsale-countdown .countdown .time{
+	width: 46px;
+	height: 46px;
+	background-color: #605751;
+
+}
+.home-flashsale .box .flashsale-countdown .countdown .time span{
+	display: block;
+	width: 46px;
+	height: 46px;
+	color: #fff;
+	font-size: 23px;
+	text-align: center;
+}
+
+.home-flashsale .box .flashsale-list{
+	width: 991px;
+	height: 340px;
+}
+.home-flashsale .box .flashsale-list ul li {
+	float: left;
+	width: 235px;
+	height: 340px;
+	margin-left: 12px;
+	text-align: center;
+	background-color: #fff;
+}
+.home-flashsale .box .flashsale-list ul li:nth-child(1){
+	border-top: 1px solid #83c44e;
+}
+.home-flashsale .box .flashsale-list ul li:nth-child(2){
+	border-top: 1px solid #2196f3;
+}
+.home-flashsale .box .flashsale-list ul li:nth-child(3){
+	border-top: 1px solid #e53935;
+}
+.home-flashsale .box .flashsale-list ul li:nth-child(4){
+	border-top: 1px solid #00c0a5;
+}
+
+.home-flashsale .box .flashsale-list ul li .title{
+	font-size: 14px;
+	color:#000;
+	margin-top: 35px;
+}
+.home-flashsale .box .flashsale-list ul li .explain{
+	font-size: 12px;
+	color: gray;
+	margin-top: 5px;
+}
+.home-flashsale .box .flashsale-list ul li .price{
+	font-size: 13px;
+	color: #ff6700;
+	margin-top: 20px;
+}
+.home-flashsale .box .flashsale-list ul li .price del{
+	color: gray;
+}
+/* 小米闪购结束 */
+
+/* banner-box开始  */
+.banner-box{
+	margin: 22px auto;
+}
+.banner-box a img{
+	width: 100%;
+	height: 120px;
+}
+/* banner-box结束  */
+
+/* 商品列表公共类 */
+.item-box::after{
+  content: '';
+  display: block;
+  clear: both;
+}
+.item-box .header::after{
+  content: '';
+  display: block;
+  clear: both;
+}
+.item-box .header .title h3{
+  font-size: 23px;
+  font-weight: normal;
+}
+
+.item-box .box .item li{
+  width: 234px;
+  height: 300px;
+  float: left;
+  background-color: #fff;
+  margin-left: 14px;
+  text-align: center;
+}
+
+.item-box .box  li a .model{
+  margin-top: 10px;
+  font-size: 14px;
+  color: #000;
+}
+.item-box .box  li a .explain{
+  margin-top: 2px;
+  display: block;
+  font-size: 9px;
+  color: gray;
+}
+.item-box .box li a .price{
+  display: inline-block;
+  margin-top: 15px;
+  font-size: 13px;
+  color: #ff6700;
+}
+.item-box .box li a del{
+  font-size: 10px;
+  display: inline-block;
+  margin-left: 5px;
+  color: gray;
+}
+.item-box .header .all span{
+  display: inline-block;
+  font-size: 16px;
+  margin: 0 10px;
+  padding-bottom: 2px;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+
+.item-box .box .item .items{
+  margin-top: 18px;
+}
+.item-box .box .item .items:first-child{
+  margin-left: 0;
+}
+.item-box .box .item .items:nth-child(6){
+  margin-left: 0;
+}
+.item-box .box .item .items a .small{
+  height: 160px;
+  width: 160px;
+}
+
+.item-box .box .item .small-item li{
+  width: 234px;
+  height: 143px;
+  margin-top: 18px;
+  margin-left: 14px;
+  text-align: left;
+} 
+.item-box .box .item .small-item li a{
+  display: block;
+  width: 185px;
+  height: 65px;
+  margin: 40px auto;
+}
+.item-box .box .item .small-item .top a div{
+  width: 105px;
+}
+
+.item-box .box .item .small-item .bottom a div .model{
+  font-size: 20px;
+}
+.item-box .box .item .small-item .bottom a div span{
+  font-size: 10px;
+  color: gray;
+}
+.item-box .box .item .small-item .bottom a i{
+  font-size: 60px;
+  color: #ff6700;
+}
+
+/* 商品列表公共类 */
+
+/* 鼠标悬停动画 */
+.up{
+  transition: all 0.2s linear;
+}
+.up:hover{
+  transform: translateY(-3px);
+  box-shadow: 0 15px 30px rgba(0,0,0,.1);
+}
+/* 鼠标悬停动画 */
+
+/* 手机列表开始 */
+
+.phone-item-box{
+  margin-top: 18px;
+}
+.phone-item-box .box{
+  margin-top: 18px;
+}
+
+.phone-item-box .header .all{
+  font-size: 18px;
+}
+
+.phone-item-box .box .big{
+  width: 230px;
+}
+
+.phone-item-box .box li:nth-child(5),.phone-item-box .box li:nth-child(6),.phone-item-box .box li:nth-child(7),.phone-item-box .box li:nth-child(8){
+  margin-top: 13px;
+}
+
+/* 手机列表结束 */
+
+
+/* 家电列表开始 */
+.appliance-item-box .header .all span:nth-child(1){
+  color: #ff6700;
+  border-bottom: 2px solid #ff6700;
+}
+.appliance-item-box .header .all span:nth-child(1):hover{
+  color: #ff6700;
+  border-bottom: 2px solid #ff6700;
+}
+
+.appliance-item-box .header .all span:nth-child(2):hover{
+  color: #ff6700;
+  border-bottom: 2px solid #ff6700;
+}
+
+/* 家电列表结束 */
+
+/* 智能列表开始 */
+.intel-item-box .header .all span:nth-child(1){
+  color: #ff6700;
+  border-bottom: 2px solid #ff6700;
+}
+.intel-item-box .header .all span:nth-child(1):hover{
+  color: #ff6700;
+  border-bottom: 2px solid #ff6700;
+}
+
+.intel-item-box .header .all span:nth-child(2):hover{
+  color: #ff6700;
+  border-bottom: 2px solid #ff6700;
+}
+.intel-item-box .header .all span:nth-child(3):hover{
+  color: #ff6700;
+  border-bottom: 2px solid #ff6700;
+}
+/* 智能列表结束 */
+
+/* 搭配列表开始 */
+.collocation-item-box .header .all span:nth-child(1){
+  color: #ff6700;
+  border-bottom: 2px solid #ff6700;
+}
+.collocation-item-box .header .all span:nth-child(1):hover{
+  color: #ff6700;
+  border-bottom: 2px solid #ff6700;
+}
+
+.collocation-item-box .header .all span:nth-child(2):hover{
+  color: #ff6700;
+  border-bottom: 2px solid #ff6700;
+}
+/* 搭配列表结束 */
+
+/* 配件列表开始 */
+.parts-item-box .header .all span:nth-child(1){
+  color: #ff6700;
+  border-bottom: 2px solid #ff6700;
+}
+.parts-item-box .header .all span:nth-child(1):hover{
+  color: #ff6700;
+  border-bottom: 2px solid #ff6700;
+}
+
+.parts-item-box .header .all span:nth-child(2):hover{
+  color: #ff6700;
+  border-bottom: 2px solid #ff6700;
+}
+.parts-item-box .header .all span:nth-child(3):hover{
+  color: #ff6700;
+  border-bottom: 2px solid #ff6700;
+}
+/* 配件列表结束 */
+
+/* 周边列表开始 */
+.periphery-item-box .header .all span:nth-child(1){
+  color: #ff6700;
+  border-bottom: 2px solid #ff6700;
+}
+.periphery-item-box .header .all span:nth-child(1):hover{
+  color: #ff6700;
+  border-bottom: 2px solid #ff6700;
+}
+
+.periphery-item-box .header .all span:nth-child(2):hover{
+  color: #ff6700;
+  border-bottom: 2px solid #ff6700;
+}
+/* 周边列表结束 */
+
+/* 视频板块开始 */
+.video-box{
+  margin-top: 18px;
+  margin-bottom: 18px;
+}
+.video-box .header::after{
+  content: '';
+  display: block;
+  clear: both;
+}
+.video-box .header{
+  margin-top: 18px;
+  margin-bottom: 18px;
+}
+
+.video-box .header .all{
+  font-size: 18px;
+}
+.video-box .video-items{
+  display: flex;
+  justify-content: space-between;
+}
+.video-box .video-items li{
+  width: 296px;
+  height: 285px;
+  background-color: #fff;
+  position: relative;
+}
+.video-box .video-items li a i{
+  display: block;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 140px;
+  left: 20px;
+  text-align: center;
+  background-color: rgba(0,0,0,.3);
+  line-height: 20px;
+  font-size: 30px;
+  transition: .5s;
+}
+.video-box .video-items li a:hover i{
+  color: #ff6700;
+}
+.video-box .video-items li a:hover .fa-play{
+  color: #FFFFFF;
+}
+.video-box .video-items li a p{
+  text-align: center;
+  color: #000;
+  font-size: 13px;
+  margin-top: 30px;
+}
+/* 视频板块结束 */
+
+/* 底部开始 */
+footer {
+  background-color: #fff;
+  position: relative;
+}
+
+/* 底部的各种超链接开始 */
+footer .service {
+  height: 79px;
+  text-align: center;
+  border-bottom: 1px solid #eaeaea;
+}
+
+footer .service ul {
+  position: absolute;
+  height: 27px;
+  top: 25px;
+}
+
+footer .service li {
+  float: left;
+  width: 244px;
+  height: 27px;
+  line-height: 27px;
+  background-color: #fff;
+  font-size: 18px;
+  color: #616161;
+  border-right: 1px solid #ccc;
+}
+
+footer .service li a {
+  color: #616161;
+}
+footer .service li a:hover {
+  color: #ff6700;
+}
+footer .service li:nth-child(5) {
+  border-right: none;
+}
+
+footer .help {
+  height: 190px;
+}
+
+footer .help dl {
+  float: left;
+  margin-top: 40px;
+  padding-right: 103px;
+}
+
+footer .help dd {
+  font-size: 12px;
+}
+
+footer .help .links dt {
+  color: #424242;
+  font-size: 13px;
+  margin-bottom: 30px;
+}
+
+footer .help .links a {
+  display: block;
+  width: 60px;
+  height: 30px;
+  color: #757575;
+}
+
+footer .help .links a:hover{
+  color: #ff6700;
+}
+
+/* 各种超链接结束 */
+
+/* 联系方式开始 */
+footer .contact {
+  width: 247px;
+  height: 195px;
+  text-align: center;
+}
+
+.info {
+  width: 100%;
+  height: 110px;
+  margin: 40px auto;
+  border-left: 1px solid #e0e0e0;
+}
+
+.info .phone {
+  color: #ff6700;
+  font-size: 20px;
+}
+
+.info .date {
+  font-size: 12px;
+}
+
+.info button {
+  background: none;
+  color: #ff6700;
+  width: 118px;
+  height: 28px;
+  border: 1px solid #ff6700;
+  cursor: pointer;
+  transition: 0.7s;
+  margin-top: 20px;
+}
+
+.info button:hover {
+  background: #ff6700;
+  color: #fff;
+}
+
+/* 联系方式结束 */
+
+/* 版权信息开始 */
+.site-info {
+  padding: 30px 0;
+}
+
+.site-info .site-logo {
+  width: 55px;
+  height: 55px;
+  background: url(../img/mi-logo.png) no-repeat 50% 50%;
+  background-color: #ff6700;
+  margin-right: 10px;
+}
+
+.site-info .site-text {
+  width: 1160px;
+  font-size: 12px;
+}
+
+.site-info .site-text p {
+  line-height: 18px;
+}
+
+.site-info .site-text .site-links a {
+  color: #757575;
+}
+.site-info .site-text .site-links a:hover {
+  color: #ff6700;
+}
+.site-info .site-text .site-links .space {
+  color: #757575;
+}
+
+.site-info .site-text .site-copy {
+  color: #b0b0b0;
+}
+
+.site-info .site-text .site-copy a {
+  margin-left: 5px;
+}
+
+.site-info .imgLinks {
+  width: auto;
+  height: 28px;
+  margin: 115px 0 0 65px;
+}
+
+.site-info .imgLinks img {
+  height: 28px;
+}
+
+/* 版权信息结束 */
+
+/* 右侧工具条开始 */
+.home-tool-bar{
+	position: fixed;
+	right: 0;
+	top: 50px;
+}
+.home-tool-bar ul li {
+	border-left: 1px solid #f5f5f5;
+	border-right: 1px solid #f5f5f5;
+	border-bottom: 1px solid #f5f5f5;
+	width: 82px;
+	height: 90px;
+	box-sizing: border-box;
+	padding-top: 17px;
+	text-align: center;
+	background-color: #fff;
+}
+.home-tool-bar ul li:nth-child(1){
+	border-top: 1px solid #f5f5f5;
+}
+.home-tool-bar ul li a{
+	display: block;
+}
+.home-tool-bar ul li i{
+	display: block;
+	font-size: 35px;
+}
+.home-tool-bar ul li span{
+	font-size: 16px;
+}
+/* 右侧工具条结束 */
