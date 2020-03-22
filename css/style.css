@@ -227,6 +227,8 @@ header ul li a:hover {
   width: 100%;
   height: 460px;
   position: absolute;
+  transition: 1s;
+  opacity: 0
 }
 
 .site-category .categoryImgList span {
